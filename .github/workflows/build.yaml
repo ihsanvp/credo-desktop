@@ -40,6 +40,9 @@ jobs:
           # node-version: latest
           node-version-file: '.nvmrc'
 
+      - name: install pnpm
+        uses: pnpm/action-setup@v2
+
       - name: Install Rust (Stable)
         run:
           curl https://sh.rustup.rs -sSf | sh -s -- -y
