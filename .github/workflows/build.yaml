@@ -37,11 +37,13 @@ jobs:
         uses: actions/setup-node@v3
         # NOTE: enterprise developers may hard code a version
         with:
-          node-version: latest
+          # node-version: latest
           node-version-file: '.nvmrc'
 
       - name: install pnpm
         uses: pnpm/action-setup@v2
+        with:
+          version: latest
 
       - name: Install Rust (Stable)
         run:
