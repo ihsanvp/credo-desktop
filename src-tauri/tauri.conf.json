@@ -150,10 +150,10 @@
     },
     "updater": {
       "active": true,
-      "dialog": true,
+      "dialog": false,
       "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDk1OTZGREIxMUU5REE0NTAKUldSUXBKMGVzZjJXbFFTQnFJemN3a1NkcmFxUmF1WXlieGNPLzhFM1c2djhLTUdDU3Q1a3lZMzkK",
       "endpoints": [
-        "http://localhost:8000"
+        "https://credo-api-production.up.railway.app/update/{{target}}/{{current_version}}"
       ]
     },
     "windows": [
